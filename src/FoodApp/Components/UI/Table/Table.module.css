@@ -1,0 +1,138 @@
+.tableContainer{
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: 0 1px 18px 10px rgba(0, 0, 0, 0.39);
+}
+.table{
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.table th, .table td{
+    padding:5px 5px;
+    font-size: 16px;
+}
+.tableheader{
+    height: 60px;
+    background-color: var(--primaryColorLight);
+    color: var(--whiteColor);
+    border: none;
+}
+
+.tablebody{
+    background-color: var(--whiteColor);
+}
+
+.bodyrow{
+    border-bottom: 1px solid var(--primaryColorLight);
+}
+
+.pagination{
+    width: 100%;
+    height: 60px;
+    background-color: var(--whiteColor);
+    color: var(--primaryColorLight);
+    text-align: right;
+    padding-top: 8px;
+    box-sizing: border-box;
+}
+
+label{
+    font-weight: bold;
+    margin-right: 5px;
+}
+.select{
+    cursor: pointer;
+    height: 30px;
+    border: 0.2px solid var(--primaryColorDark);
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--primaryColorDark);
+    color: var(--whiteColor);
+    padding: 3px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.select:hover{
+    background-color: var(--colorOnHover);
+}
+.option{
+    height: auto;
+    cursor: pointer;
+    color: var(--primaryTextColor);
+    font-weight: bold;
+    background-color: var(--whiteColor);
+}
+
+.option:hover{
+    color: var(--whiteColor);
+}
+
+.button{
+    background-color: transparent;
+    border: none;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    color: var(--primaryColorDark);
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.disabled{
+    opacity: 0.7;
+}
+.button:hover{
+    color: var(--colorOnHover);
+}
+
+/* responsive */
+
+@media(max-width:800px) {
+    .tableheader{
+        display: none;
+    }
+
+    .table, .tablebody, .bodyrow, .table td{
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        background-color: transparent;
+    }
+
+    .bodyrow:nth-child(even){
+        background-color:var(--whiteColor)
+    }
+    .bodyrow:nth-child(odd){
+        background-color:var(--whiteColor);
+    }
+
+    .table th, .table td{
+        padding:12px 15px;
+        font-size: 12px;
+    }
+
+    .bodyrow{
+        margin-bottom: 10px;
+    }
+
+    .table td{
+        text-align: right;
+        padding-left: 30%;
+        position: relative;
+        border-bottom: 0.2px solid var(--primaryColorDark);
+    }
+
+    .table td::before{
+        content: attr(data-label);
+        position:absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 5px;
+        font-weight: bold;
+        text-align: left;
+        color: var(--primaryColorDark);
+    }
+}

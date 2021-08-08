@@ -1,0 +1,81 @@
+.button {
+    cursor: pointer;
+    font: inherit;
+    border: none;
+    background-color: var(--primaryColorDark);
+    color: var(--whiteColor);
+    padding: 0.75rem 3rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 25px;
+    font-weight: bold;
+  }
+  
+  .button:hover,
+  .button:active {
+    background-color:var(--colorOnHover);
+  }
+  
+  .icon {
+    margin-right: 0.5rem;
+    font-size: 1.5rem;
+  }
+  
+  .badge {
+    background-color: var(--primaryColorLight);
+    padding: 0.25rem 1rem;
+    border-radius: 25px;
+    margin-left: 1rem;
+    font-weight: bold;
+  }
+  
+  .button:hover .badge,
+  .button:active .badge {
+    background-color: var(--primaryColorDark);
+  }
+  
+  .bump {
+    animation: bump 300ms ease-out;
+  }
+  
+  @keyframes bump {
+    0% {
+      transform: scale(1);
+    }
+    10% {
+      transform: scale(0.9);
+    }
+    30% {
+      transform: scale(1.1);
+    }
+    50% {
+      transform: scale(1.15);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  /* responsive */
+
+  @media (max-width:800px) {
+    .icon{
+      display: none;
+    }
+    .cartText{
+      display: none;
+    }
+
+    .button{
+      padding: 0.2rem 1rem;
+    }
+
+    .badge{
+      padding: 2px;
+      margin-left: 0px;
+      border-radius: 50%;
+      background: transparent;
+    }
+  }
+

@@ -1,0 +1,61 @@
+.profileData{
+    z-index: 12;
+}
+
+.userButton{
+    width: auto;
+    height: auto;
+    padding: 1rem;
+    box-sizing: border-box;
+    border: none;
+    background-color: var(--primaryColorDark);
+    border-radius: 50%;
+    color: var(--whiteColor);
+    cursor: pointer;
+    font-weight: bolder;
+    position: absolute;
+    top: 12px;
+    right: 0.5rem;
+}
+
+.userButton:hover, .userButton:active{
+    background-color: var(--colorOnHover);
+}
+
+.listprofile{
+    list-style-type: none;
+    padding: 0%;
+    background-color: var(--primaryColorDark);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin-top: 1px;
+    position: absolute;
+    top: 4.2rem;
+    right: 0.5rem;
+}
+
+.listItem{
+    padding:0.5rem;
+    box-sizing: border-box;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.listItem:hover{
+    background-color: var(--colorOnHover);
+    /* border-radius: 5px; */
+}
+
+/* responsive */
+
+@media (max-width:800px) {
+    .userButton{
+        font-size: 15px;
+        padding: 0.5rem;
+        position: absolute;
+        top: 22px;
+        right: 0.5rem;
+    }
+}

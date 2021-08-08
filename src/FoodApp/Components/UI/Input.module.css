@@ -1,0 +1,79 @@
+.input {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+  
+  .input label {
+    font-weight: bold;
+    margin-right: 1rem;
+  }
+  
+  .inputField{
+    /* width: 3rem; */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font: inherit;
+    padding-left: 0.5rem;
+    width: 100%;
+  }
+
+  .error{
+    border: 2px solid red;
+  }
+
+  .tooltip{
+    flex: 1;
+    display: flex;
+    position: relative;
+  }
+
+  .tooltip .tooltiptext {
+    visibility: visible;
+    width: auto;
+    background-color: white;
+    color:#ad5502;
+    text-align: center;
+    border-radius: 6px;
+    padding: 2px 2px 2px 2px;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -60px;
+    box-sizing: border-box;
+    border: 1px solid #ad5502;
+  }
+
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #ad5502 transparent transparent transparent;
+  }
+
+  .bump {
+    animation: bump 300ms ease-out;
+  }
+
+  @keyframes bump {
+    0% {
+      transform: scale(1);
+    }
+    10% {
+      transform: scale(0.9);
+    }
+    30% {
+      transform: scale(1.1);
+    }
+    50% {
+      transform: scale(1.15);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }

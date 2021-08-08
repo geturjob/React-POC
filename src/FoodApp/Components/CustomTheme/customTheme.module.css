@@ -1,0 +1,81 @@
+.customThemeContainer{
+    width: 80%;
+    margin: auto;
+    margin-top: -15rem;
+    position: relative;
+    background-color: var(--whiteColor);
+    color: var(--primaryColorLight);
+    border-radius: 14px;
+    padding: 1rem;
+    box-shadow: 0 1px 18px 10px rgba(0, 0, 0, 0.25);
+    margin-bottom: 10rem;
+}
+
+.datePickerContainer{
+  display: flex;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.datePicker{
+  min-width: 500px;
+}
+
+.themeButtons{
+  flex: 1;
+}
+
+.button {
+    background-color: var(--primaryColorDark);
+    color: white;
+    font: inherit;
+    cursor: pointer;
+    border: 1px solid var(--primaryColorDark);
+    padding: 0.5rem 2rem;
+    border-radius: 10px;
+  }
+  .button:hover, .button:active {
+    background-color: var(--colorOnHover);
+    border-color: var(--colorOnHover);
+    color: white;
+  }
+
+  .headingTitle{
+    font-weight: bold;
+  }
+
+  .individualButton{
+    display: flex;
+    padding: 2rem;
+    box-sizing: border-box;
+  }
+
+  .individualButton button{
+    flex: 1;
+  }
+
+  .individualButton span{
+    flex: 1;
+    margin-left: 40px;
+  }
+  .actionFields{
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+  }
+
+
+  @media (max-width:1000px) {
+    .datePickerContainer{
+      display: flex;
+      flex-direction: column;
+    }
+    .datePicker{
+      min-width: 220px;
+    }
+    .button{
+      padding: 2px;
+      font-size: 15px;
+    }
+  }
+  

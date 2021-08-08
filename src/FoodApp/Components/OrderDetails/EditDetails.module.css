@@ -1,0 +1,38 @@
+.editFormContainer{
+    color: var(--primaryColorLight);
+}
+
+.actions {
+    text-align: right;
+  }
+  
+  .actions button {
+    font: inherit;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid var(--primaryColorDark);
+    padding: 0.5rem 2rem;
+    border-radius: 25px;
+    margin-left: 1rem;
+  }
+  
+  .actions button:hover,
+  .actions button:active {
+    background-color: var(--primaryColorDark);
+    border-color: var(--primaryColorDark);
+    color:var(--whiteColor);
+  }
+  
+  .actions .button-cancel {
+    color: var(--primaryColorDark);
+  }
+  
+  .actions .button {
+    background-color: var(--primaryColorDark);
+    color: var(--whiteColor);
+  }
+
+  .actions .button:hover {
+    background-color: var(--colorOnHover);
+    color: var(--whiteColor);
+  }

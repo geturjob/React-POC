@@ -1,0 +1,38 @@
+.select{
+    width: 100%;
+    cursor: pointer;
+    height: 40px;
+    border: 0.2px solid var(--primaryColorDark);
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--primaryColorDark);
+    color: var(--whiteColor);
+    padding: 3px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.select:hover{
+    background-color: var(--colorOnHover);
+}
+.option{
+    height: 50px;
+    cursor: pointer;
+    color: var(--primaryTextColor);
+    font-weight: bold;
+    background-color: var(--whiteColor);
+}
+
+.option:hover{
+    color: var(--whiteColor);
+}
+
+/* responsive */
+@media (max-width:800px) {
+    .select{
+        font-size: 10px;
+    }
+    .option{
+        font-size: 10px;
+    }
+}
